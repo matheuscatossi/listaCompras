@@ -4,4 +4,5 @@
 
     <!-- Criados -->
     <string name="cadastro_produto">Cadastro de Produtos</string>
+    <string name="lista_produto">Lista de produtos</string>
 </resources>
