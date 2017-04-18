@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">listaCompras</string>
     <string name="action_settings">Settings</string>
+
+    <!-- Criados -->
+    <string name="cadastro_produto">Cadastro de Produtos</string>
 </resources>

@@ -24,8 +24,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CadastroProdutoActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/cadastro_produto">
 
         </activity>
     </application>
