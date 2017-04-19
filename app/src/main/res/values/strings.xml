@@ -5,4 +5,5 @@
     <!-- Criados -->
     <string name="cadastro_produto">Cadastro de Produto</string>
     <string name="lista_produto">Lista de produtos</string>
+    <string name="info_produto">Informações de Produto</string>
 </resources>

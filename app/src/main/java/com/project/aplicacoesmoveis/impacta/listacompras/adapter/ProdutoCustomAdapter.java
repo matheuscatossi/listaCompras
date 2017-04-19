@@ -1,6 +1,7 @@
 package com.project.aplicacoesmoveis.impacta.listacompras.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
@@ -15,6 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
+import com.project.aplicacoesmoveis.impacta.listacompras.InfoProdutoActivity;
 import com.project.aplicacoesmoveis.impacta.listacompras.R;
 import com.project.aplicacoesmoveis.impacta.listacompras.model.Produto;
 
@@ -54,15 +56,12 @@ public class ProdutoCustomAdapter extends ArrayAdapter<Produto> implements View.
     @NonNull
     @Override
     public View getView(int position, View convertView, @NonNull ViewGroup parent) {
-
-
         final Produto produto = getItem(position);
         ViewHolder viewHolder;
 
         final View result;
 
         if (convertView == null) {
-
             viewHolder = new ViewHolder();
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.row_item_produto, parent, false);
@@ -81,26 +80,14 @@ public class ProdutoCustomAdapter extends ArrayAdapter<Produto> implements View.
         result.startAnimation(animation);
         lastPosition = position;
 
-
         viewHolder.tv_nome_produto.setText("" + produto.getNome());
-
-        Log.e("","" + produto.getNome());
-        Log.e("","" + produto.getId());
-        Log.e("","" + produto.getCategoria());
-        Log.e("","" + produto.getValor());
-        Log.e("","" + produto.isFavorito());
-        
-
 
         viewHolder.ll_linha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-//                    Intent i = new Intent(mContext, InfoReuniaoActivity.class);
-//
-//                    i.putExtra("Id", String.valueOf(produto.getId()));
-//
-//                    mContext.startActivity(i);
+                Intent i = new Intent(mContext, InfoProdutoActivity.class);
+                i.putExtra("id", String.valueOf(produto.getId()));
+                mContext.startActivity(i);
             }
         });
 

@@ -12,9 +12,9 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/lista_produto"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,9 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CadastroProdutoActivity"
+        <activity
+            android:name=".CadastroProdutoActivity"
             android:label="@string/cadastro_produto">
-
+        </activity>
+        <activity android:name=".InfoProdutoActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/info_produto">
         </activity>
     </application>
 
