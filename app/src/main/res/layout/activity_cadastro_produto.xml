@@ -12,65 +12,62 @@
     android:layout_marginRight="@dimen/activity_vertical_margin"
     tools:context="com.project.aplicacoesmoveis.impacta.listacompras.CadastroProdutoActivity">
 
-
     <LinearLayout
         android:layout_width="336dp"
-        android:layout_height="519dp"
+        android:layout_height="463dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/tv_nome_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nome do produto:"/>
+            android:text="Nome do produto" />
 
         <EditText
             android:id="@+id/et_nome_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ex.: Produto X"/>
+            android:hint="Ex.: Produto X" />
 
         <TextView
             android:id="@+id/tv_valor_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Valor do produto:"/>
+            android:text="Valor do produto" />
 
         <EditText
             android:id="@+id/et_valor_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ex.: 50.00"/>
+            android:hint="Ex.: 50.00" />
 
         <TextView
             android:id="@+id/tv_categoria_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Digite a Categoria do produto:"/>
+            android:text="Categoria do produto" />
 
         <EditText
             android:id="@+id/et_categoria_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ex.: Categoria Y"/>
+            android:hint="Ex.: Categoria Y" />
 
-       <CheckBox
-           android:layout_marginTop="20dp"
-           android:id="@+id/cb_favorito"
-           android:text="Favorito"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/cb_favorito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Favorito" />
 
         <Button
-            android:textColor="#FFFFFF"
-            android:background="@color/colorPrimary"
             android:id="@+id/btn_cadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cadastrar"/>
-
-
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            android:text="Cadastrar"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
-
-
 </android.support.constraint.ConstraintLayout>

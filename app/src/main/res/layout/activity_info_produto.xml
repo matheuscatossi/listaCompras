@@ -33,7 +33,6 @@
 
                 </android.support.v7.widget.Toolbar>
 
-
             </android.support.design.widget.AppBarLayout>
 
         </android.support.design.widget.CoordinatorLayout>
@@ -53,7 +52,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nome do produto:" />
+                android:text="Nome do produto" />
 
             <TextView
                 android:id="@+id/tv_nome_produto"
@@ -66,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Valor do produto:" />
+                android:text="Valor do produto" />
 
             <TextView
                 android:id="@+id/tv_valor_produto"
@@ -79,7 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Digite a Categoria do produto:" />
+                android:text="Categoria do produto" />
 
             <TextView
                 android:id="@+id/tv_categoria_produto"
@@ -92,7 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Produto é favorito:" />
+                android:text="Produto é favorito" />
 
             <TextView
                 android:id="@+id/tv_favorito"

@@ -15,9 +15,8 @@ import com.project.aplicacoesmoveis.impacta.listacompras.handler.DatabaseHandler
 import com.project.aplicacoesmoveis.impacta.listacompras.model.Produto;
 
 public class InfoProdutoActivity extends AppCompatActivity {
-
-
     private DatabaseHandlerProduto db;
+
     TextView nome_produto, valor_produto, categoria_produto, favorito;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +53,15 @@ public class InfoProdutoActivity extends AppCompatActivity {
         nome_produto.setText(produto.getNome());
         valor_produto.setText("" + produto.getValor());
         categoria_produto.setText("" + produto.getCategoria());
-        favorito.setText("" + produto.isFavorito());
+
+        String stringFavorito = "";
+
+        if(produto.isFavorito()) {
+            stringFavorito = "Sim";
+        } else {
+            stringFavorito = "Não";
+        }
+
+        favorito.setText("" + stringFavorito);
     }
 }
