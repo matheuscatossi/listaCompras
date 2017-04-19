@@ -4,15 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
     tools:context="com.project.aplicacoesmoveis.impacta.listacompras.CadastroProdutoActivity">
 
 
     <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="551dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp">
+        android:layout_width="336dp"
+        android:layout_height="519dp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/tv_nome_produto"
@@ -24,7 +28,7 @@
             android:id="@+id/et_nome_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Digite o nome do produto"/>
+            android:hint="Ex.: Produto X"/>
 
         <TextView
             android:id="@+id/tv_valor_produto"
@@ -36,27 +40,30 @@
             android:id="@+id/et_valor_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Digite o valor do produto"/>
+            android:hint="Ex.: 50.00"/>
 
         <TextView
             android:id="@+id/tv_categoria_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Categoria do produto:"/>
+            android:text="Digite a Categoria do produto:"/>
 
         <EditText
             android:id="@+id/et_categoria_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Digite a categoria do produto"/>
+            android:hint="Ex.: Categoria Y"/>
 
        <CheckBox
+           android:layout_marginTop="20dp"
            android:id="@+id/cb_favorito"
            android:text="Favorito"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"/>
 
         <Button
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"
             android:id="@+id/btn_cadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

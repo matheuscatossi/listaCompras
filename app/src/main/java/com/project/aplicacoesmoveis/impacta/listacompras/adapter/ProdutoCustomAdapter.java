@@ -1,8 +1,10 @@
 package com.project.aplicacoesmoveis.impacta.listacompras.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -81,6 +83,14 @@ public class ProdutoCustomAdapter extends ArrayAdapter<Produto> implements View.
 
 
         viewHolder.tv_nome_produto.setText("" + produto.getNome());
+
+        Log.e("","" + produto.getNome());
+        Log.e("","" + produto.getId());
+        Log.e("","" + produto.getCategoria());
+        Log.e("","" + produto.getValor());
+        Log.e("","" + produto.isFavorito());
+        
+
 
         viewHolder.ll_linha.setOnClickListener(new View.OnClickListener() {
             @Override

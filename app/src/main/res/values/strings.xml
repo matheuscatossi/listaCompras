@@ -3,6 +3,6 @@
     <string name="action_settings">Settings</string>
 
     <!-- Criados -->
-    <string name="cadastro_produto">Cadastro de Produtos</string>
+    <string name="cadastro_produto">Cadastro de Produto</string>
     <string name="lista_produto">Lista de produtos</string>
 </resources>
